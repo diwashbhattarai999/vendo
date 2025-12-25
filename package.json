@@ -1,26 +1,25 @@
 {
-  "name": "my-turborepo",
+  "name": "vendo",
   "version": "0.0.0",
   "private": true,
   "description": "",
   "author": "",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
     "test": "turbo run test",
     "test:e2e": "turbo run test:e2e",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint": "biome lint .",
+    "format": "biome format --write ."
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "prettier": "^3.2.5",
+    "@vendo/typescript-config": "workspace:*",
     "turbo": "^2.7.2"
   },
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@10.26.2",
   "engines": {
-    "node": ">=18"
+    "node": ">=20",
+    "pnpm": ">=10"
   }
 }

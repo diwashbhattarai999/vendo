@@ -1,5 +1,5 @@
 {
-  "name": "@repo/jest-config",
+  "name": "@vendo/jest-config",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -37,6 +37,7 @@
     "typescript": "^5.8.2"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc -b",
+    "clean": "rm -rf dist"
   }
 }
