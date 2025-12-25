@@ -1,4 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
-  "extends": ["@vendo/biome-config/react-internal.json"]
+	"$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+	"root": false,
+	"extends": ["@vendo/biome-config/react-internal.json"]
 }

@@ -1,7 +1,7 @@
 {
-  "extends": "@vendo/typescript-config/nestjs.json",
-  "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist"
-  }
+	"extends": "@vendo/typescript-config/nestjs.json",
+	"compilerOptions": {
+		"baseUrl": "./",
+		"outDir": "./dist"
+	}
 }

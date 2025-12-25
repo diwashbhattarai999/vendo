@@ -1,25 +1,42 @@
 {
-  "name": "vendo",
-  "version": "0.0.0",
-  "private": true,
-  "description": "",
-  "author": "",
-  "license": "MIT",
-  "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "test": "turbo run test",
-    "test:e2e": "turbo run test:e2e",
-    "lint": "biome lint .",
-    "format": "biome format --write ."
-  },
-  "devDependencies": {
-    "@vendo/typescript-config": "workspace:*",
-    "turbo": "^2.7.2"
-  },
-  "packageManager": "pnpm@10.26.2",
-  "engines": {
-    "node": ">=20",
-    "pnpm": ">=10"
-  }
+	"name": "vendo",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Vendo Monorepo is a collection of packages and projects for Vendo platform.",
+	"author": {
+		"name": "Diwash Bhandari",
+		"email": "diwashb999@gmail.com",
+		"url": "https://diwashb.com.np"
+	},
+	"license": "MIT",
+	"scripts": {
+		"dev": "turbo run dev",
+		"build": "turbo run build",
+		"test": "turbo run test",
+		"test:e2e": "turbo run test:e2e",
+		"lint": "biome lint .",
+		"format": "biome format --write .",
+		"type-check": "pnpm -r exec tsc --noEmit"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.10",
+		"@commitlint/cli": "^20.2.0",
+		"@commitlint/config-conventional": "^20.2.0",
+		"@commitlint/types": "^20.2.0",
+		"@vendo/typescript-config": "workspace:*",
+		"lefthook": "^2.0.12",
+		"turbo": "^2.7.2",
+		"typescript": "^5.9.3"
+	},
+	"packageManager": "pnpm@10.26.2",
+	"engines": {
+		"node": ">=20.0.0",
+		"pnpm": ">=10.0.0"
+	},
+	"keywords": [
+		"vendo",
+		"monorepo",
+		"packages",
+		"projects"
+	]
 }

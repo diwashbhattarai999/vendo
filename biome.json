@@ -7,6 +7,10 @@
       "recommended": true
     }
   },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": ["**", "!.vscode", "!**/dist", "!**/build"]
+  },
   "formatter": {
     "lineWidth": 120,
     "indentStyle": "tab",
