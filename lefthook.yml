@@ -24,9 +24,6 @@ pre-push:
 
     biome-check:
       glob: "*.{js,ts,tsx,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
-      exclude:
-        - "apps/api/coverage/**"
-        - "apps/api/coverage/lcov-report/**"
       run: pnpm exec biome check . --files-ignore-unknown=true --no-errors-on-unmatched --colors=off
 
 commit-msg:
