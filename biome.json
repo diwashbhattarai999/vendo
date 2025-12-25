@@ -1,19 +1,19 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
-  "root": true,
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true
-    }
-  },
-  "files": {
-    "ignoreUnknown": false,
-    "includes": ["**", "!.vscode", "!**/dist", "!**/build"]
-  },
-  "formatter": {
-    "lineWidth": 120,
-    "indentStyle": "tab",
-    "indentWidth": 4
-  }
+	"$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+	"root": true,
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"includes": ["**", "!.vscode", "!**/dist", "!**/build"]
+	},
+	"formatter": {
+		"lineWidth": 120,
+		"indentStyle": "tab",
+		"indentWidth": 4
+	}
 }

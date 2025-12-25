@@ -1,4 +1,6 @@
 // unfortunately, need to disambiguate the `Config` namespace @jest/types uses (via next/jest) and the `Config` type we want for typing our config here
+// biome-ignore lint/correctness/noUnusedImports: We need this import for type disambiguation
+import type { Config as ConfigNamespace } from "@jest/types";
 import type { Config } from "jest";
 import nextJest from "next/jest";
 import { config as baseConfig } from "./base";
