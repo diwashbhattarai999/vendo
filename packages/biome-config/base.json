@@ -3,8 +3,8 @@
 	"root": false,
 	"vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
 	"files": {
-		"ignoreUnknown": false,
-		"includes": ["**", "!dist/**", "!build/**"]
+		"ignoreUnknown": true,
+		"includes": ["**", "!dist/**", "!build/**", "!node_modules/**", "!.turbo/**", "!coverage/**"]
 	},
 	"formatter": { "enabled": true, "indentStyle": "tab", "indentWidth": 4 },
 	"linter": {

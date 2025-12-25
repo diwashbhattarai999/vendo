@@ -8,8 +8,17 @@
 		}
 	},
 	"files": {
-		"ignoreUnknown": false,
-		"includes": ["**", "!.vscode", "!**/dist", "!**/build"]
+		"ignoreUnknown": true,
+		"includes": [
+			"**",
+			"!.vscode",
+			"!**/dist",
+			"!**/build",
+			"!.turbo",
+			"!**/node_modules",
+			"!**/coverage",
+			"!**/lcov-report"
+		]
 	},
 	"formatter": {
 		"lineWidth": 120,

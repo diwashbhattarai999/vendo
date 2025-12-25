@@ -5,13 +5,14 @@
 		"rules": {
 			"recommended": true,
 			"style": {
-				"useBlockStatements": "off"
+				"useBlockStatements": "off",
+				"useImportType": "off"
 			},
 			"suspicious": {
 				"noCommentText": "warn"
 			}
 		},
-		"includes": ["**", "!dist/**", "!build/**"]
+		"includes": ["**", "!dist/**", "!build/**", "!coverage/**"]
 	},
 	"javascript": {
 		"parser": {

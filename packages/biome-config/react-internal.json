@@ -5,6 +5,6 @@
 		"domains": {
 			"react": "recommended"
 		},
-		"includes": ["**", "!dist/**", "!build/**"]
+		"includes": ["**", "!dist/**", "!dist/**", "!build/**"]
 	}
 }

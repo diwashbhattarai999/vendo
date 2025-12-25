@@ -10,7 +10,7 @@ import {
 
 import type { CreateLinkDto, UpdateLinkDto } from "@vendo/api";
 
-import type { LinksService } from "./links.service";
+import { LinksService } from "./links.service";
 
 @Controller("links")
 export class LinksController {

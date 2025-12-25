@@ -1,0 +1,60 @@
+name: Vendo CI
+
+on:
+  push:
+    branches:
+      - main
+      - development
+      - "feature/*"
+  pull_request:
+    branches:
+      - main
+      - development
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [api, web] # Add more apps if needed
+    steps:
+      # 1️⃣ Checkout code
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2️⃣ Setup Node
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      # 3️⃣ Setup pnpm
+      - uses: pnpm/action-setup@v4
+
+      # 4️⃣ Install dependencies
+      - name: Install dependencies
+        run: pnpm install
+
+      # 5️⃣ Cache Turbo
+      - name: Cache Turbo
+        uses: actions/cache@v3
+        with:
+          path: .turbo
+          key: turbo-cache-${{ matrix.app }}-${{ github.sha }}
+
+      # 6️⃣ Biome lint
+      - name: Biome lint
+        run: pnpm exec biome ci apps/${{ matrix.app }}
+
+      # 9️⃣ Build the app
+      - name: Build
+        run: pnpm --filter ${matrix.app} build
+
+      # 7️⃣ TypeScript typecheck
+      - name: Typecheck
+        run: pnpm exec tsc --noEmit -p apps/${{ matrix.app }}/tsconfig.json
+
+      # 8️⃣ Run tests
+      - name: Run tests
+        run: pnpm --filter ${matrix.app} test
