@@ -16,7 +16,7 @@
 		"test:e2e": "turbo run test:e2e",
 		"lint": "biome lint .",
 		"format": "biome format --write .",
-		"type-check": "pnpm -r exec tsc --noEmit",
+		"typecheck": "pnpm -r exec tsc --noEmit",
 		"release": "semantic-release",
 		"release:dry": "semantic-release --dry-run"
 	},

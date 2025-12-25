@@ -1,3 +1,11 @@
 {
-	"extends": "@vendo/typescript-config/base.json"
+	"extends": "@vendo/typescript-config/base.json",
+	"files": [],
+	"references": [
+		{ "path": "packages/api" },
+		{ "path": "packages/jest-config" },
+		{ "path": "packages/ui" },
+		{ "path": "apps/api" },
+		{ "path": "apps/web" }
+	]
 }
