@@ -1,0 +1,16 @@
+# 1.0.0 (2025-12-25)
+
+
+### Bug Fixes
+
+* add biome ignore for jest type ([c584313](https://github.com/diwashbhattarai999/vendo/commit/c584313646d77ae4013d61bff15d22c99553e5b3))
+* biome config error ([169d479](https://github.com/diwashbhattarai999/vendo/commit/169d4797fda2d137b3b0f5fd637d71ec0bd5135c))
+* biome configs ([6eb5d4b](https://github.com/diwashbhattarai999/vendo/commit/6eb5d4be13787286651cbeb59344fa5ef8d66599))
+
+
+### Features
+
+* **create-turbo:** apply official-starter transform ([a46f9b7](https://github.com/diwashbhattarai999/vendo/commit/a46f9b7ac4c00cc2ac98eebdc226c305ed58d77e))
+* **create-turbo:** apply pnpm-eslint transform ([4e547c9](https://github.com/diwashbhattarai999/vendo/commit/4e547c96446fe05e5529bd01e2b5f21b790d3539))
+* **create-turbo:** create with-nestjs ([67d7c2d](https://github.com/diwashbhattarai999/vendo/commit/67d7c2d9ef8d513d8ea5690870b809dcda5798ac))
+* **create-turbo:** install dependencies ([1c13f77](https://github.com/diwashbhattarai999/vendo/commit/1c13f77dce6d2b8ffdd44023ac4701bea1a35b03))
