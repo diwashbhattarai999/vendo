@@ -54,8 +54,7 @@ export default async function Home() {
 				/>
 				<ol>
 					<li>
-						Get started by editing{" "}
-						<code>apps/web/app/page.tsx</code>
+						Get started by editing <code>apps/web/app/page.tsx</code>
 					</li>
 					<li>Save and see your changes instantly.</li>
 				</ol>
@@ -107,8 +106,8 @@ export default async function Home() {
 					</div>
 				) : (
 					<div style={{ color: "#666" }}>
-						No links available. Make sure the NestJS API is running
-						on port 3000.
+						No links available. Make sure the NestJS API is running on port
+						3000.
 					</div>
 				)}
 			</main>
