@@ -23,14 +23,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      # 3️⃣ Setup pnpm
+      - uses: pnpm/action-setup@v4
+
       # 2️⃣ Setup Node
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: pnpm
-
-      # 3️⃣ Setup pnpm
-      - uses: pnpm/action-setup@v4
 
       # 4️⃣ Install dependencies
       - name: Install dependencies
@@ -49,7 +49,7 @@ jobs:
 
       # 9️⃣ Build the app
       - name: Build
-        run: pnpm --filter ${matrix.app} build
+        run: pnpm --filter ${{ matrix.app }} build
 
       # 7️⃣ TypeScript typecheck
       - name: Typecheck
@@ -57,4 +57,4 @@ jobs:
 
       # 8️⃣ Run tests
       - name: Run tests
-        run: pnpm --filter ${matrix.app} test
+        run: pnpm --filter ${{ matrix.app }} test
