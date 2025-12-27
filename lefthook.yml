@@ -1,9 +1,14 @@
 pre-commit:
   commands:
     biome-format:
-      glob: "*.{js,ts,tsx,cjs,mjs,d.cts,d.mts,json,jsonc}"
-      run: pnpm exec biome format --write --files-ignore-unknown=true --no-errors-on-unmatched --colors=off {staged_files}
-      stage_fixed: true
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,json,jsonc,jsx,tsx}"
+      # Format only staged files
+      run: pnpm format --files-ignore-unknown=true --no-errors-on-unmatched {staged_files}
+
+    biome-lint:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,json,jsonc,jsx,tsx}"
+      # Lint only staged files
+      run: pnpm lint --files-ignore-unknown=true --no-errors-on-unmatched {staged_files}
 
 pre-push:
   commands:
