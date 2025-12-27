@@ -19,6 +19,11 @@ jobs:
   ci:
     runs-on: ubuntu-latest
 
+    env:
+      NEXT_PUBLIC_API_URL: http://localhost:3000/api/v1
+      NEXT_PUBLIC_APP_URL: http://localhost:3001
+      NODE_ENV: test
+
     steps:
       # Checkout
       - uses: actions/checkout@v4

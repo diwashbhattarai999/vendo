@@ -14,9 +14,11 @@ node_modules
 .env.staging
 .env.production
 
-# Keep example files tracked
+# Keep example and test files tracked
 !.env.example
 !.env.*.example
+!.env.test
+!.env.*.test
 
 # Testing
 .nyc_output
