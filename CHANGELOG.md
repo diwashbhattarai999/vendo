@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/diwashbhattarai999/vendo/compare/v1.0.0...v1.0.1) (2025-12-27)
+
+
+### Bug Fixes
+
+* remove @vendo/api package ([62f3419](https://github.com/diwashbhattarai999/vendo/commit/62f3419cac06f4fa4201a2c7ed55365b1c08cd35))
+* remove unused packages & files ([895e950](https://github.com/diwashbhattarai999/vendo/commit/895e9509e078f457216047bd9477e5f5b04731e9))
+
 # 1.0.0 (2025-12-25)
 
 
