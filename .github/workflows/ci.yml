@@ -11,50 +11,54 @@ on:
       - main
       - development
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   ci:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        app: [api, web] # Add more apps if needed
+
     steps:
-      # 1️⃣ Checkout code
+      # Checkout
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 3️⃣ Setup pnpm
+      # Setup pnpm (uses version from packageManager)
       - uses: pnpm/action-setup@v4
 
-      # 2️⃣ Setup Node
+      # Setup Node
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: pnpm
 
-      # 4️⃣ Install dependencies
+      # Install dependencies (safe & deterministic)
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
-      # 5️⃣ Cache Turbo
+      # Cache Turbo
       - name: Cache Turbo
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: .turbo
-          key: turbo-cache-${{ matrix.app }}-${{ github.sha }}
+          key: turbo-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            turbo-${{ runner.os }}-
 
-      # 6️⃣ Biome lint
-      - name: Biome lint
-        run: pnpm exec biome ci apps/${{ matrix.app }}
+      # Biome (lint + format check)
+      - name: Biome check
+        run: pnpm exec biome ci .
 
-      # 9️⃣ Build the app
-      - name: Build
-        run: pnpm --filter ${{ matrix.app }}... build
+      # Typecheck (all affected packages)
+      - name: TypeScript typecheck
+        run: pnpm exec turbo run typecheck
 
-      # 7️⃣ TypeScript typecheck
-      - name: Typecheck
-        run: pnpm exec tsc --noEmit -p apps/${{ matrix.app }}/tsconfig.json
-
-      # 8️⃣ Run tests
+      # Tests (affected only)
       - name: Run tests
-        run: pnpm --filter ${{ matrix.app }} test
+        run: pnpm exec turbo run test
+
+      # Build (affected only)
+      - name: Build
+        run: pnpm exec turbo run build
