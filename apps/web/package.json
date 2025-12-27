@@ -8,7 +8,7 @@
 		"start": "next start",
 		"lint": "biome lint .",
 		"format": "biome format --write .",
-		"check-types": "tsc --noEmit",
+		"typecheck": "tsc --noEmit",
 		"test": "vitest",
 		"test:watch": "vitest --watch"
 	},
