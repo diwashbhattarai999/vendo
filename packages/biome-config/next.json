@@ -3,7 +3,16 @@
 	"extends": ["./base.json"],
 	"files": {
 		"ignoreUnknown": true,
-		"includes": ["**", "!node_modules", "!.next", "!dist", "!build"]
+		"includes": ["src/**"]
+	},
+	"css": {
+		"parser": {
+			"cssModules": true,
+			"tailwindDirectives": true
+		},
+		"linter": {
+			"enabled": false
+		}
 	},
 	"linter": {
 		"rules": {

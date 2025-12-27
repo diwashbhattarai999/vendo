@@ -38,5 +38,16 @@
 		"dist": true,
 		"coverage": true,
 		"node_modules": true
+	},
+
+	// Tailwind CSS v4 support
+	"tailwindCSS.includeLanguages": {
+		"typescript": "javascript",
+		"typescriptreact": "javascript"
+	},
+	"css.lint.unknownAtRules": "ignore",
+	"css.validate": false,
+	"files.associations": {
+		"*.css": "tailwindcss"
 	}
 }
