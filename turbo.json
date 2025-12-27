@@ -3,12 +3,25 @@
 
 	"globalDependencies": ["package.json", "pnpm-lock.yaml", "turbo.json"],
 
+	"globalEnv": [
+		"NODE_ENV",
+		"DATABASE_URL",
+		"REDIS_URL",
+		"JWT_SECRET",
+		"JWT_EXPIRES_IN",
+		"REFRESH_TOKEN_EXPIRES_IN",
+		"LOG_LEVEL",
+		"FEATURE_ANALYTICS_ENABLED",
+		"FEATURE_EMAIL_NOTIFICATIONS"
+	],
+
 	"ui": "tui",
 	"tasks": {
 		"build": {
 			"dependsOn": ["^build"],
 			"inputs": ["$TURBO_DEFAULT$"],
-			"outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+			"outputs": ["dist/**", ".next/**", "!.next/cache/**"],
+			"env": ["NEXT_PUBLIC_*", "PORT", "API_PREFIX", "CORS_ORIGIN"]
 		},
 		"lint": {
 			"dependsOn": ["^lint"]
@@ -21,10 +34,12 @@
 		},
 		"dev": {
 			"cache": false,
-			"persistent": true
+			"persistent": true,
+			"env": ["PORT", "HOST", "NEXT_PUBLIC_*"]
 		},
 		"test": {
-			"dependsOn": ["^test"]
+			"dependsOn": ["^test"],
+			"env": ["NODE_ENV", "DATABASE_URL", "REDIS_URL"]
 		},
 		"clean": {
 			"cache": false

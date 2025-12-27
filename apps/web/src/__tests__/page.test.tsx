@@ -5,8 +5,8 @@ import Home from "../app/page";
 describe("Home", () => {
 	it("renders a welcome message", () => {
 		render(<Home />);
-		const heading = screen.getByRole("main");
+		const heading = screen.getByRole("heading", { level: 1 });
 		expect(heading).toBeInTheDocument();
-		expect(heading).toHaveTextContent("Welcom to Next.js App");
+		expect(heading).toHaveTextContent("Welcome to Next.js App");
 	});
 });

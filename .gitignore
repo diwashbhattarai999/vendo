@@ -5,12 +5,18 @@ node_modules
 .pnp
 .pnp.js
 
-# Local env files
+# Environment files (keep .example files tracked)
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*.local
+.env.development
+.env.test
+.env.staging
+.env.production
+
+# Keep example files tracked
+!.env.example
+!.env.*.example
 
 # Testing
 .nyc_output
