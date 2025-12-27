@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/diwashbhattarai999/vendo/compare/v1.0.1...v1.1.0) (2025-12-27)
+
+
+### Features
+
+* add env package with zod configuration for apps ([3dc6a07](https://github.com/diwashbhattarai999/vendo/commit/3dc6a0751dd2c787aa20d91f0f525549f373fe7f))
+
 ## [1.0.1](https://github.com/diwashbhattarai999/vendo/compare/v1.0.0...v1.0.1) (2025-12-27)
 
 
