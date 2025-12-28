@@ -20,14 +20,17 @@ export const env = createEnv({
         PORT: z.coerce.number().default(3000),
         HOST: z.string().default("localhost"),
 
-        // // API Configuration
-        // API_PREFIX: z.string().default("/api"),
+        // API Configuration
+        API_PREFIX: z.string().default("api"),
         // API_RATE_LIMIT_TTL: z.coerce.number().default(60),
         // API_RATE_LIMIT_MAX: z.coerce.number().default(100),
 
-        // // CORS Configuration
-        // CORS_ORIGIN: z.string().default("http://localhost:3001"),
-        // CORS_CREDENTIALS: z.coerce.boolean().default(true),
+        // CORS Configuration
+        CORS_ORIGIN: z
+            .string()
+            .default("http://localhost:3001")
+            .transform((val) => val.split(",").map((s) => s.trim())),
+        CORS_CREDENTIALS: z.coerce.boolean().default(true),
 
         // Database
         DATABASE_URL: z.url(),
