@@ -35,6 +35,9 @@ async function bootstrap() {
     // Apply CORS configuration
     app.enableCors(corsConfig);
 
+    // Enable graceful shutdown hooks
+    app.enableShutdownHooks();
+
     // Start the server
     const port = env.PORT || 3000;
     await app.listen(port);
