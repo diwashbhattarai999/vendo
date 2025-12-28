@@ -1,3 +1,10 @@
+# [1.3.0-alpha.3](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.2...v1.3.0-alpha.3) (2025-12-28)
+
+
+### Features
+
+* add health check routes ([3102811](https://github.com/diwashbhattarai999/vendo/commit/3102811693bc365203ea3ba4d2e11cc9ca836ab2))
+
 # [1.3.0-alpha.2](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.1...v1.3.0-alpha.2) (2025-12-28)
 
 
