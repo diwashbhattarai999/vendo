@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
-import { Prisma, User } from "@/generated/prisma/client";
+import { CreateUserDto } from "./dto/create-user.dto";
+import { UpdateUserDto } from "./dto/update-user.dto";
 import { UsersRepository } from "./users.repository";
 
 @Injectable()
@@ -12,7 +13,7 @@ export class UsersService {
      * @param data - Data to create a new user
      * @returns The created user
      */
-    async create(data: Prisma.UserCreateInput): Promise<User> {
+    async create(data: CreateUserDto) {
         return this.repository.create(data);
     }
 
@@ -21,7 +22,7 @@ export class UsersService {
      *
      * @returns The found users
      */
-    async findAll(): Promise<User[]> {
+    async findAll() {
         return this.repository.findAll();
     }
 
@@ -31,7 +32,7 @@ export class UsersService {
      * @param id - ID of the user to find
      * @returns The found user or null if not found
      */
-    async findOne(id: string): Promise<User> {
+    async findOne(id: string) {
         const user = await this.repository.findOne({ id });
         if (!user) throw new NotFoundException(`User with ID ${id} not found`);
 
@@ -45,7 +46,7 @@ export class UsersService {
      * @param data - Data to update the user
      * @returns The updated user
      */
-    async update(id: string, data: Prisma.UserUpdateInput): Promise<User> {
+    async update(id: string, data: UpdateUserDto) {
         await this.findOne(id);
         return this.repository.update({ where: { id }, data });
     }
@@ -56,7 +57,7 @@ export class UsersService {
      * @param id - ID of the user to remove
      * @returns The removed user
      */
-    async remove(id: string): Promise<User> {
+    async remove(id: string) {
         await this.findOne(id);
         return this.repository.remove({ id });
     }

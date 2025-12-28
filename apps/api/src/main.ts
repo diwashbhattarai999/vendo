@@ -1,3 +1,4 @@
+import { ValidationPipe } from "@nestjs/common";
 import { NestFactory } from "@nestjs/core";
 
 import { AppModule } from "@/app/app.module";
@@ -11,6 +12,15 @@ import { env } from "@/config/env";
 async function bootstrap() {
     // Create the NestJS application
     const app = await NestFactory.create(AppModule);
+
+    // Apply global validation pipe
+    app.useGlobalPipes(
+        new ValidationPipe({
+            whitelist: true, // Remove unknown properties
+            transform: true, // Convert input data to the expected type
+            forbidNonWhitelisted: true, // Throw an error if unknown properties are present
+        }),
+    );
 
     // Apply CORS configuration
     app.enableCors(corsConfig);
