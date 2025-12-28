@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/diwashbhattarai999/vendo/compare/v1.1.0...v1.2.0) (2025-12-28)
+
+
+### Features
+
+* add postgres docker configuration ([a748ffc](https://github.com/diwashbhattarai999/vendo/commit/a748ffc3dc638a300d7881ab9a20ecd86cf8e32e))
+
 # [1.1.0](https://github.com/diwashbhattarai999/vendo/compare/v1.0.1...v1.1.0) (2025-12-27)
 
 
