@@ -29,8 +29,8 @@ export const env = createEnv({
         // CORS_ORIGIN: z.string().default("http://localhost:3001"),
         // CORS_CREDENTIALS: z.coerce.boolean().default(true),
 
-        // // Database
-        // DATABASE_URL: z.url(),
+        // Database
+        DATABASE_URL: z.url(),
 
         // // Redis
         // REDIS_URL: z.url().optional(),

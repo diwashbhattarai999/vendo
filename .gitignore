@@ -68,3 +68,9 @@ pnpm-debug.log*
 # Misc
 .DS_Store
 *.pem
+
+# Prisma
+generated
+
+# Request
+request.http
