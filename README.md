@@ -40,11 +40,17 @@ pnpm install
 
 ### Development
 
-To start all applications in development mode:
+To start all applications and the database in development mode:
 
-```bash
-pnpm dev
-```
+1. **Start the Database** (Docker):
+   ```bash
+   docker compose -f docker-compose.yml up -d
+   ```
+
+2. **Start the Applications**:
+   ```bash
+   pnpm dev
+   ```
 
 ### Build
 
