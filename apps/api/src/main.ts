@@ -1,4 +1,4 @@
-import { ValidationPipe } from "@nestjs/common";
+import { ValidationPipe, VersioningType } from "@nestjs/common";
 import { HttpAdapterHost, NestFactory } from "@nestjs/core";
 import { Logger } from "nestjs-pino";
 
@@ -22,6 +22,17 @@ async function bootstrap() {
 
     // Get HTTP adapter for global filters
     const httpAdapterHost = app.get(HttpAdapterHost);
+
+    // Set global prefix
+    app.setGlobalPrefix(env.API_PREFIX, {
+        exclude: ["/", "health", "health/*path"],
+    });
+
+    // Enable versioning
+    app.enableVersioning({
+        type: VersioningType.URI,
+        defaultVersion: "0",
+    });
 
     // Apply global validation pipe
     app.useGlobalPipes(new ValidationPipe(validationConfig));
