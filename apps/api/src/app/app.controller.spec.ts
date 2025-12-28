@@ -16,8 +16,14 @@ describe("AppController", () => {
     });
 
     describe("root", () => {
-        it('should return "Hello World!"', () => {
-            expect(appController.getHello()).toBe("Hello World!");
+        it("should return API information", () => {
+            expect(appController.getHello()).toEqual({
+                name: "Vendo Multi-Tenant SaaS API",
+                version: "1.0.0",
+                status: "healthy",
+                message: "Welcome to Vendo API",
+                docs: "/docs",
+            });
         });
     });
 });
