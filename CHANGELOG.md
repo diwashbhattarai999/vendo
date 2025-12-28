@@ -1,3 +1,10 @@
+# [1.3.0-alpha.4](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.3...v1.3.0-alpha.4) (2025-12-28)
+
+
+### Features
+
+* add api prefix & versioning ([3c96308](https://github.com/diwashbhattarai999/vendo/commit/3c96308a224c9b4652aa34d81fcd36eddf4edc1b))
+
 # [1.3.0-alpha.3](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.2...v1.3.0-alpha.3) (2025-12-28)
 
 
