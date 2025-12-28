@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/diwashbhattarai999/vendo/compare/v1.2.0...v1.3.0) (2025-12-28)
+
+
+### Features
+
+* add prisma configuration with example user module ([187281b](https://github.com/diwashbhattarai999/vendo/commit/187281b1e42c7ff0c5ae808818d72877a6585c22))
+
 # [1.2.0](https://github.com/diwashbhattarai999/vendo/compare/v1.1.0...v1.2.0) (2025-12-28)
 
 
