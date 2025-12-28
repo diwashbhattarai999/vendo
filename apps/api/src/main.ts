@@ -6,6 +6,7 @@ import { AppModule } from "@/app/app.module";
 import { AllExceptionsFilter } from "@/common/filters/all-exceptions.filter";
 import { corsConfig } from "@/config/cors.config";
 import { env } from "@/config/env";
+import { setupSwagger } from "@/config/swagger.config";
 import { validationConfig } from "@/config/validation.config";
 
 /**
@@ -25,6 +26,9 @@ async function bootstrap() {
     // Apply global validation pipe
     app.useGlobalPipes(new ValidationPipe(validationConfig));
 
+    // Setup Swagger documentation
+    setupSwagger(app);
+
     // Apply global exception filter
     app.useGlobalFilters(new AllExceptionsFilter(httpAdapterHost));
 
@@ -32,7 +36,13 @@ async function bootstrap() {
     app.enableCors(corsConfig);
 
     // Start the server
-    await app.listen(env.PORT || 3000);
+    const port = env.PORT || 3000;
+    await app.listen(port);
+
+    // Log application startup information
+    const logger = app.get(Logger);
+    logger.log(`🚀 Application is running on: http://localhost:${port}`);
+    logger.log(`📖 Swagger documentation: http://localhost:${port}/docs`);
 }
 
 /**
