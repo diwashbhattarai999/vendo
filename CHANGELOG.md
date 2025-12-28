@@ -1,3 +1,11 @@
+# [1.3.0-alpha.2](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.1...v1.3.0-alpha.2) (2025-12-28)
+
+
+### Features
+
+* setup pino logger ([1f0a721](https://github.com/diwashbhattarai999/vendo/commit/1f0a721b30274dacc17875301931fd814e862f47))
+* setup swagger for api documentation ([2725201](https://github.com/diwashbhattarai999/vendo/commit/2725201ee5949bac48789af8a9dc79e762d2574c))
+
 # [1.3.0-alpha.1](https://github.com/diwashbhattarai999/vendo/compare/v1.2.0...v1.3.0-alpha.1) (2025-12-28)
 
 
