@@ -1,3 +1,10 @@
+# [1.3.0-alpha.5](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.4...v1.3.0-alpha.5) (2025-12-28)
+
+
+### Bug Fixes
+
+* app controller test response ([e26da7c](https://github.com/diwashbhattarai999/vendo/commit/e26da7c9d9a5cccac568f59b95d009c3dd842b09))
+
 # [1.3.0-alpha.4](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.3...v1.3.0-alpha.4) (2025-12-28)
 
 
