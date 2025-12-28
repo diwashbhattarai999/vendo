@@ -56,6 +56,10 @@ jobs:
       - name: Biome check
         run: pnpm exec biome ci .
 
+      # Generate Prisma Client
+      - name: Generate Prisma Client
+        run: pnpm exec turbo run db:generate
+
       # Typecheck (all affected packages)
       - name: TypeScript typecheck
         run: pnpm exec turbo run typecheck
