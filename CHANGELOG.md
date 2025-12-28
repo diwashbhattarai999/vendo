@@ -1,3 +1,13 @@
+# [1.3.0-alpha.1](https://github.com/diwashbhattarai999/vendo/compare/v1.2.0...v1.3.0-alpha.1) (2025-12-28)
+
+
+### Features
+
+* add cors configurations ([fb43e5b](https://github.com/diwashbhattarai999/vendo/commit/fb43e5b4ab01fad22c39814f8c8e060b8d4b306e))
+* add global exception filter ([c002922](https://github.com/diwashbhattarai999/vendo/commit/c002922590aff76f4d548760dc202ad6b6915646))
+* add prisma configuration with example user module ([187281b](https://github.com/diwashbhattarai999/vendo/commit/187281b1e42c7ff0c5ae808818d72877a6585c22))
+* add validation pipe ([e16a5d6](https://github.com/diwashbhattarai999/vendo/commit/e16a5d60d70379ee7966db38f6b9f226753aff36))
+
 # [1.3.0](https://github.com/diwashbhattarai999/vendo/compare/v1.2.0...v1.3.0) (2025-12-28)
 
 
