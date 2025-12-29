@@ -1,3 +1,11 @@
+# [1.3.0-alpha.7](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.6...v1.3.0-alpha.7) (2025-12-29)
+
+
+### Features
+
+* add helmet configurations ([28df8fd](https://github.com/diwashbhattarai999/vendo/commit/28df8fd3b2d2a721f6fcf8be01b41d1a019eda0e))
+* add rate limit configuration ([1633047](https://github.com/diwashbhattarai999/vendo/commit/16330470bb5da65885d2702a16fac34125ebdee4))
+
 # [1.3.0-alpha.6](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.5...v1.3.0-alpha.6) (2025-12-29)
 
 
