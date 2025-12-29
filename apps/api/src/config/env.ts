@@ -22,8 +22,9 @@ export const env = createEnv({
 
         // API Configuration
         API_PREFIX: z.string().default("api"),
-        // API_RATE_LIMIT_TTL: z.coerce.number().default(60),
-        // API_RATE_LIMIT_MAX: z.coerce.number().default(100),
+        API_RATE_LIMIT_TTL: z.coerce.number().default(60),
+        API_RATE_LIMIT_MAX: z.coerce.number().default(100),
+        API_RATE_LIMIT_SKIP_IF: z.coerce.boolean().default(true),
 
         // CORS Configuration
         CORS_ORIGIN: z
