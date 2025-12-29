@@ -33,6 +33,10 @@ export const env = createEnv({
             .transform((val) => val.split(",").map((s) => s.trim())),
         CORS_CREDENTIALS: z.coerce.boolean().default(true),
 
+        // Cookie Configuration
+        COOKIE_SECRET: z.string().min(10),
+        COOKIE_DOMAIN: z.string().optional(),
+
         // Database
         DATABASE_URL: z.url(),
 

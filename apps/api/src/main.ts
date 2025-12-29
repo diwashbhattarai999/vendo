@@ -1,5 +1,6 @@
 import { ValidationPipe, VersioningType } from "@nestjs/common";
 import { HttpAdapterHost, NestFactory } from "@nestjs/core";
+import cookieParser from "cookie-parser";
 import helmet from "helmet";
 import { Logger } from "nestjs-pino";
 import { AppModule } from "@/app/app.module";
@@ -20,6 +21,9 @@ async function bootstrap() {
 
     // Use Pino logger
     app.useLogger(app.get(Logger));
+
+    // Apply cookie parser middleware
+    app.use(cookieParser(env.COOKIE_SECRET));
 
     // Apply Helmet security headers
     app.use(helmet(helmetConfig));
