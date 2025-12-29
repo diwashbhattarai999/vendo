@@ -1,3 +1,10 @@
+# [1.3.0-alpha.6](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.5...v1.3.0-alpha.6) (2025-12-29)
+
+
+### Features
+
+* add favicon & serve static files ([187eeb8](https://github.com/diwashbhattarai999/vendo/commit/187eeb8a12f78c6c4df11d1f804a39375de37562))
+
 # [1.3.0-alpha.5](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.4...v1.3.0-alpha.5) (2025-12-28)
 
 
