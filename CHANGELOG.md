@@ -1,40 +1,17 @@
-# [1.3.0](https://github.com/diwashbhattarai999/vendo/compare/v1.2.0...v1.3.0) (2025-12-28)
-
-
-### Bug Fixes
-
-* app controller test response ([e26da7c](https://github.com/diwashbhattarai999/vendo/commit/e26da7c9d9a5cccac568f59b95d009c3dd842b09))
+# [1.3.0-alpha.7](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.6...v1.3.0-alpha.7) (2025-12-29)
 
 
 ### Features
 
-* add api prefix & versioning ([3c96308](https://github.com/diwashbhattarai999/vendo/commit/3c96308a224c9b4652aa34d81fcd36eddf4edc1b))
-* add cors configurations ([fb43e5b](https://github.com/diwashbhattarai999/vendo/commit/fb43e5b4ab01fad22c39814f8c8e060b8d4b306e))
-* add global exception filter ([c002922](https://github.com/diwashbhattarai999/vendo/commit/c002922590aff76f4d548760dc202ad6b6915646))
-* add health check routes ([3102811](https://github.com/diwashbhattarai999/vendo/commit/3102811693bc365203ea3ba4d2e11cc9ca836ab2))
-* add prisma configuration with example user module ([187281b](https://github.com/diwashbhattarai999/vendo/commit/187281b1e42c7ff0c5ae808818d72877a6585c22))
-* add validation pipe ([e16a5d6](https://github.com/diwashbhattarai999/vendo/commit/e16a5d60d70379ee7966db38f6b9f226753aff36))
-* setup pino logger ([1f0a721](https://github.com/diwashbhattarai999/vendo/commit/1f0a721b30274dacc17875301931fd814e862f47))
-* setup swagger for api documentation ([2725201](https://github.com/diwashbhattarai999/vendo/commit/2725201ee5949bac48789af8a9dc79e762d2574c))
+* add helmet configurations ([28df8fd](https://github.com/diwashbhattarai999/vendo/commit/28df8fd3b2d2a721f6fcf8be01b41d1a019eda0e))
+* add rate limit configuration ([1633047](https://github.com/diwashbhattarai999/vendo/commit/16330470bb5da65885d2702a16fac34125ebdee4))
 
-# [1.3.0-dev.1](https://github.com/diwashbhattarai999/vendo/compare/v1.2.0...v1.3.0-dev.1) (2025-12-28)
-
-
-### Bug Fixes
-
-* app controller test response ([e26da7c](https://github.com/diwashbhattarai999/vendo/commit/e26da7c9d9a5cccac568f59b95d009c3dd842b09))
+# [1.3.0-alpha.6](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.5...v1.3.0-alpha.6) (2025-12-29)
 
 
 ### Features
 
-* add api prefix & versioning ([3c96308](https://github.com/diwashbhattarai999/vendo/commit/3c96308a224c9b4652aa34d81fcd36eddf4edc1b))
-* add cors configurations ([fb43e5b](https://github.com/diwashbhattarai999/vendo/commit/fb43e5b4ab01fad22c39814f8c8e060b8d4b306e))
-* add global exception filter ([c002922](https://github.com/diwashbhattarai999/vendo/commit/c002922590aff76f4d548760dc202ad6b6915646))
-* add health check routes ([3102811](https://github.com/diwashbhattarai999/vendo/commit/3102811693bc365203ea3ba4d2e11cc9ca836ab2))
-* add prisma configuration with example user module ([187281b](https://github.com/diwashbhattarai999/vendo/commit/187281b1e42c7ff0c5ae808818d72877a6585c22))
-* add validation pipe ([e16a5d6](https://github.com/diwashbhattarai999/vendo/commit/e16a5d60d70379ee7966db38f6b9f226753aff36))
-* setup pino logger ([1f0a721](https://github.com/diwashbhattarai999/vendo/commit/1f0a721b30274dacc17875301931fd814e862f47))
-* setup swagger for api documentation ([2725201](https://github.com/diwashbhattarai999/vendo/commit/2725201ee5949bac48789af8a9dc79e762d2574c))
+* add favicon & serve static files ([187eeb8](https://github.com/diwashbhattarai999/vendo/commit/187eeb8a12f78c6c4df11d1f804a39375de37562))
 
 # [1.3.0-alpha.5](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.4...v1.3.0-alpha.5) (2025-12-28)
 
