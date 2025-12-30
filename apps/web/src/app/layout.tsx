@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Public_Sans } from "next/font/google";
 
 import "@vendo/ui/index.css";
 import "@/styles/globals.css";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
+const inter = Inter({
+	variable: "--font-inter",
 	subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
+const publicSans = Public_Sans({
+	variable: "--font-public-sans",
 	subsets: ["latin"],
 });
 
@@ -26,9 +26,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
+			<body className={`${inter.variable} ${publicSans.variable} antialiased`}>
 				{children}
 			</body>
 		</html>

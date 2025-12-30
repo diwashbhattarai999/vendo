@@ -12,6 +12,6 @@
 		"next-env.d.ts",
 		"next.config.js",
 		".next/types/**/*.ts"
-	],
+, "src/components/shared/background-glow.tsz"	],
 	"exclude": ["node_modules"]
 }
