@@ -22,8 +22,9 @@ export const env = createEnv({
 
         // API Configuration
         API_PREFIX: z.string().default("api"),
-        // API_RATE_LIMIT_TTL: z.coerce.number().default(60),
-        // API_RATE_LIMIT_MAX: z.coerce.number().default(100),
+        API_RATE_LIMIT_TTL: z.coerce.number().default(60),
+        API_RATE_LIMIT_MAX: z.coerce.number().default(100),
+        API_RATE_LIMIT_SKIP_IF: z.coerce.boolean().default(true),
 
         // CORS Configuration
         CORS_ORIGIN: z
@@ -31,6 +32,10 @@ export const env = createEnv({
             .default("http://localhost:3001")
             .transform((val) => val.split(",").map((s) => s.trim())),
         CORS_CREDENTIALS: z.coerce.boolean().default(true),
+
+        // Cookie Configuration
+        COOKIE_SECRET: z.string().min(10),
+        COOKIE_DOMAIN: z.string().optional(),
 
         // Database
         DATABASE_URL: z.url(),

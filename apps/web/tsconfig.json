@@ -1,7 +1,10 @@
 {
 	"extends": "@vendo/typescript-config/nextjs.json",
 	"compilerOptions": {
-		"baseUrl": "./",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		}
 	},
 	"include": [
 		"**/*.ts",
@@ -9,6 +12,6 @@
 		"next-env.d.ts",
 		"next.config.js",
 		".next/types/**/*.ts"
-	],
+, "src/components/shared/background-glow.tsz"	],
 	"exclude": ["node_modules"]
 }
