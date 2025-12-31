@@ -4,10 +4,6 @@
 		{
 			"name": "development",
 			"prerelease": "dev"
-		},
-		{
-			"name": "feature/*",
-			"prerelease": "alpha"
 		}
 	],
 	"plugins": [
