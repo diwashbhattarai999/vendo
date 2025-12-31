@@ -1,3 +1,20 @@
+# [1.3.0-dev.2](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-dev.1...v1.3.0-dev.2) (2025-12-31)
+
+
+### Bug Fixes
+
+* test to have content ([6e98651](https://github.com/diwashbhattarai999/vendo/commit/6e9865133f5d6177f778f7bbc0eddbe8c8427c60))
+
+
+### Features
+
+* add coming soon page ([ef6a898](https://github.com/diwashbhattarai999/vendo/commit/ef6a8986a5119a4332dedafe698e760c9d344029))
+* add cookie configuration ([19aef39](https://github.com/diwashbhattarai999/vendo/commit/19aef395cb16657e90266e49552e82b114bf942f))
+* add favicon & serve static files ([187eeb8](https://github.com/diwashbhattarai999/vendo/commit/187eeb8a12f78c6c4df11d1f804a39375de37562))
+* add helmet configurations ([28df8fd](https://github.com/diwashbhattarai999/vendo/commit/28df8fd3b2d2a721f6fcf8be01b41d1a019eda0e))
+* add rate limit configuration ([1633047](https://github.com/diwashbhattarai999/vendo/commit/16330470bb5da65885d2702a16fac34125ebdee4))
+* setup shadcn ui in package for web ([02ffc00](https://github.com/diwashbhattarai999/vendo/commit/02ffc007cd39a2a6a9057c95fb6bd385177c91b9))
+
 # [1.3.0-alpha.7](https://github.com/diwashbhattarai999/vendo/compare/v1.3.0-alpha.6...v1.3.0-alpha.7) (2025-12-29)
 
 
